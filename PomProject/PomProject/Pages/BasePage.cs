@@ -18,15 +18,21 @@ namespace PomProject.Pages
         { 
             this.driver = driver;
         }
-        //Finding page heading 
-        public IWebElement pageHeding => driver.FindElement(By.CssSelector("#content > h1"));
 
-        //Finding 4 different links on the homepage
+        public void Open() 
+        { 
+            driver.Navigate().GoToUrl(PageUrl);
+        }
+        public bool isOpen()
+        {
+            return driver.Url == this.PageUrl;
+        }
+        public string GetPageUrl()
+        { 
+            return driver.Url;
+        }
 
-        public IWebElement abTesting => driver.FindElement(By.LinkText("A/B Testing"));
-        public IWebElement addRemoveElements => driver.FindElement(By.LinkText("Add/Remove Elements"));
-        public IWebElement basicAuth => driver.FindElement(By.LinkText("Basic Auth"));
-        public IWebElement brokenImg => driver.FindElement(By.LinkText("Broken Images"));
+
 
 
 
