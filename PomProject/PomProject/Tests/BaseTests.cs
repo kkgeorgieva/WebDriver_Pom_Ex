@@ -12,7 +12,7 @@ namespace PomProject.Tests
     public class BaseTests
     {
         //Instantiate
-        private IWebDriver driver;
+        public  IWebDriver driver;
         
         [OneTimeSetUp]
         public void SetUp() 

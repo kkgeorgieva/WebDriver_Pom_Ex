@@ -7,8 +7,7 @@ namespace PomProject.Tests
 {
     public class HomePageTests : BaseTests
     {
-        private IWebDriver driver;
-
+       
        
         [Test]
         public void TestHomePage()
