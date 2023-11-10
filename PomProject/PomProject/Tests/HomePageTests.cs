@@ -5,24 +5,11 @@ using System;
 
 namespace PomProject.Tests
 {
-    public class HomePageTests
+    public class HomePageTests : BaseTests
     {
         private IWebDriver driver;
 
-        [SetUp]
-        public void SetUp()
-        {
-            // Initialize the driver
-            this.driver = new ChromeDriver();
-            driver.Manage().Window.Maximize();
-            // Set a delay of 5 seconds
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
-        }
-        [TearDown]
-        public void ShutDown()
-        {
-            driver.Quit();
-        }
+       
         [Test]
         public void TestHomePage()
         { 
