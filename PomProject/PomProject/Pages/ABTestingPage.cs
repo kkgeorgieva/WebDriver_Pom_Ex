@@ -19,6 +19,7 @@ namespace PomProject.Pages
         //Overriding the PageUrl parameter
         public override string PageUrl => "https://the-internet.herokuapp.com/abtest";
         public IWebElement pageHeding => driver.FindElement(By.CssSelector("#content > div > h3"));
+        public IWebElement paragraph => driver.FindElement(By.CssSelector("#content > div > p"));
 
 
     }

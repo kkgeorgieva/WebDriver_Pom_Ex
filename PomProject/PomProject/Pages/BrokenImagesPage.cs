@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace PomProject.Pages
 {
-    public class ABTestingPage : BasePage
+    public class BrokenImagesPage : BasePage
     {
         private IWebDriver driver;
 
         // Constructor to initialize the driver
-        public ABTestingPage(IWebDriver driver) : base(driver)
+        public BrokenImagesPage(IWebDriver driver) : base(driver)
         {
             this.driver = driver;
         }
