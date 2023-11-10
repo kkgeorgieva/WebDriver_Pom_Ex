@@ -27,5 +27,11 @@ namespace PomProject.Pages
         public IWebElement addRemoveElements => driver.FindElement(By.LinkText("Add/Remove Elements"));
         public IWebElement basicAuth => driver.FindElement(By.LinkText("Basic Auth"));
         public IWebElement brokenImg => driver.FindElement(By.LinkText("Broken Images"));
+
+        public String HomePageHeading() 
+        { 
+        return this.pageHeding.Text;
+        }
     }
+
 }

@@ -31,10 +31,11 @@ namespace PomProject.Pages
         { 
             return driver.Url;
         }
-
-
-
-
+        public string GetPageTitle() 
+        {
+            return driver.Title;
+        }
+       
 
 
     }
