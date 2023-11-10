@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,7 @@ namespace PomProject.Pages
 
         //Finding page heading 
         public IWebElement pageHeding => driver.FindElement(By.CssSelector("#content > h1"));
+        public IWebElement secondHeading => driver.FindElement(By.CssSelector("#content > h2"));
 
         //Finding 4 different links on the homepage
 
